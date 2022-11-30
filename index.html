@@ -2,9 +2,91 @@
 <html>
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<title> vaishak.io </title>
 </head>
 
 <body>
-	<h1>Hello world!</h1>
+	<header>
+		<!-- TODO: Add nav bar -->
+		<h1 class="display-2 fw-bold center-block"> Hi, I'm Vaishak! </h1>
+		<nav> 
+			<div class="container">
+			   <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+			  <svg class="right-block" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+			    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+			  </svg>
+		  </button>
+		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+		        <div class="offcanvas-header">
+		          <!-- h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5 -->
+		          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		        </div>
+		        <div class="offcanvas-body">
+		          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+		            <li class="nav-item">
+		              <a class="nav-link active" target="_blank" href="https://github.com/vlalsangi">
+  					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+  					  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+  					</svg>
+					Github
+					</a>
+		            </li>
+		            <li class="nav-item">
+		              <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/vaishaklalsangi">
+					  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+					    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+					  </svg>
+					  LinkedIn
+					  </a>
+		            </li>
+		            <li class="nav-item">
+		              <a class="nav-link" target="_blank" href="VaishakLalsangiResume.pdf">
+					  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
+					    <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+					    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+					  </svg>
+					  Resume
+					  </a>
+		            </li>
+		          </ul>
+		        </div>
+		      </div>
+		  </div>
+		</nav>
+	</header>
+	<div class="container" id="main-block">
+		<div class="row">
+			<div class="col">
+				<!--
+				<p> SideCol1 </p>
+				-->
+			</div>
+			<div class="col-6 text-center">
+				<!-- h1 class="display-5 fw-bold center-block"> Hi, I'm Vaishak! </h1-->
+				<img class="center-block" id="vaishak-portrait" src="VaishakPortraitAlt.png">
+				<p class="pt-2 center-block">
+					I'm a software engineer based in Seattle. My most recent position was working on a speech-to-text data pipeline
+					for <b>Amazon Alexa</b>. I've also worked at <b>AWS</b> and <b>Google</b>. I'm passionate about building and working on 					technology that empowers people to pursue their interests and improve their lives.<br>
+					<br>
+					I studied Computer Science at <b>Georgia Tech</b> and graduated with my B.S. in May 2019. During my time at Georgia Tech, I 					had the opportunity to do an exchange semester at <b>KAIST</b> in Daejeon, South Korea in Spring 2017, where I got to meet incredibly talented 					students from around the world and explore a country and culture that I was completely unfamiliar with. In Spring 2018, I was
+					a teaching assistant for a Systems and Networking class, which was extremely fulfilling and sparked an interest in teaching.<br>
+					<br> 
+					In my free time, I enjoy all things food (<b>eating</b>, <b>cooking</b>, and <b>baking</b>), <b>the great outdoors</b>, and 					<b>reading</b>!<br>
+					<br>
+					If you'd like to get in touch, please reach out via <a href="https://www.linkedin.com/in/vaishaklalsangi">LinkedIn</a> or <a href="mailto:vlalsangi@gmail.com"> send me an email</a>!<br>
+				</p>
+			</div>
+			<div class="col">
+				<!--
+				<p> SideCol2 </p>
+				-->
+			</div>
+		</div>
+	</div>
+	<footer>
+		Built by me using Bootstrap
+	</footer>
 </body>
 </html>
